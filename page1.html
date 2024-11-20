@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Example gradient from pink to orange */
+      color: #333;
+    }
+
+    h1.glow {
+      font-family: "Times New Roman", Times, serif;
+      text-align: center;
+      font-size: 2em;
+      color: #800080;
+      text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f, 0 0 20px #00f;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      padding: 12px 16px;
+      z-index: 1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown span {
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .images {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .images img {
+      height: 80px;
+      width: 130px;
+    }
+
+    .blur-text {
+      font-size: 3em;
+      text-align: center;
+      margin: 20px 0;
+      filter: blur(10px);
+      animation: fadeInBlur 2s ease forwards;
+    }
+
+    @keyframes fadeInBlur {
+      from {
+        filter: blur(10px);
+      }
+      to {
+        filter: blur(0px);
+      }
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 0 20px 20px 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dropdown">
+    <center><span><b>STRAND</b></span></center>
+    <div class="dropdown-content">
+      <a href="file:///storage/emulated/0/testing%20/STEM/index.html"><p>STEM</p></a>
+      <a href="file:///storage/emulated/0/testing%20/GAS/GAS.html"><p>GAS</p></a>
+      <a href="file:///storage/emulated/0/testing%20/HUMSS/HUMSS.html"><p>HUMS</p></a>
+      <a href="file:///storage/emulated/0/testing%20/ICT/ICT.html"><p>ICT</p></a>
+    </div>
+  </div>
+
+  <div class="images">
+    <img src="Department-of-Education-DepEd-Logo-1024x521.jpg" alt="DepEd Logo">
+    <img src="Messenger_creation_69C27A36-40A1-4CD2-B481-D6DA1CA2B031.jpeg" alt="DepEd Logo">
+  </div>
+
+  <div>
+    <h1 class="blur-text">MISSION</h1>
+    <p>
+      The mission of "stand alone senior high school" is to deliver high-quality education, empowering students to navigate life's complexities and acquire essential skills and knowledge for their growth and success.
+    </p>
+  </div>
+
+  <div>
+    <h1 class="blur-text">VISION</h1>
+    <p>
+      Stand alone senior high school envisions itself as a premier institution for senior high school education, dedicated to nurturing students who excel in overcoming challenges and contribute meaningfully to national progress and community development.
+    </p>
+  </div>
+</body>
+</html>

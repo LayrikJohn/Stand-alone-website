@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAS Strand</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: linear-gradient(to right, #e67e22, #f39c12); /* GAS strand background color */
+    }
+    .container {
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for the container */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px 30px;
+      border-radius: 10px;
+      width: 500px;
+      text-align: center;
+      max-width: 100%;
+    }
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      background-color: transparent; /* Transparent background for the text */
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 20px;
+      background-color: transparent; /* Transparent background for the paragraph text */
+    }
+    .highlight {
+      font-weight: bold;
+      color: #e67e22;
+      text-transform: uppercase;
+    }
+    .cta-button {
+      padding: 12px 30px;
+      background-color: #e67e22;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #d35400;
+    }
+    .animated-text span {
+      display: inline-block;
+      opacity: 0;
+      transform: translateX(150%);
+      animation: slideIn 2s forwards;
+    }
+    .animated-text span:nth-child(1) { animation-delay: 0s; }
+    .animated-text span:nth-child(2) { animation-delay: 0.2s; }
+    .animated-text span:nth-child(3) { animation-delay: 0.4s; }
+    .animated-text span:nth-child(4) { animation-delay: 0.6s; }
+    .animated-text span:nth-child(5) { animation-delay: 0.8s; }
+    .animated-text span:nth-child(6) { animation-delay: 1s; }
+    .animated-text span:nth-child(7) { animation-delay: 1.2s; }
+    .animated-text span:nth-child(8) { animation-delay: 1.4s; }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateX(150%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="animated-text">
+      <span>W</span><span>h</span><span>a</span><span>t</span>
+      <span>i</span><span>s</span> 
+      <span>G</span><span>A</span><span>S</span>
+      <span>?</span>
+    </h1>
+    <p class="animated-text">
+      <span>The</span> <span><strong>GAS</strong></span> <span>strand</span> 
+      <span>stands</span> <span>for</span> <span><strong>General</strong></span> 
+      <span>Academic</span> <span>Strand</span>. 
+      <span>It</span> <span>is</span> <span>designed</span> 
+      <span>for</span> <span>students</span> <span>who</span> 
+      <span>are</span> <span>still</span> <span>exploring</span> 
+      <span>their</span> <span>interests</span> <span>and</span> 
+      <span>career</span> <span>paths.</span>
+      <span>GAS</span> <span>offers</span> <span>a</span> <span>variety</span> 
+      <span>of</span> <span>subjects</span> <span>from</span> <span>other</span> 
+      <span>strands,</span> <span>giving</span> <span>flexibility</span> 
+      <span>and</span> <span>a</span> <span>broad</span> <span>learning</span> 
+      <span>experience.</span> <span>This</span> <span>strand</span> 
+      <span>is</span> <span>ideal</span> <span>for</span> 
+      <span>students</span> <span>who</span> <span>want</span> 
+      <span>to</span> <span>keep</span> <span>their</span> 
+      <span>options</span> <span>open</span> <span>for</span> 
+      <span>college</span> <span>courses.</span>
+    </p>
+  </div>
+</body>
+</html>
